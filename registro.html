@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Food - registro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<script src="codigo.js"></script>
+</head>
+<body body onload="comprobarLogin();">
+	<header id="top">
+		<img src="imgs/logo.png" alt="Food">
+		<div>
+			<h1>Food</h1>
+			<footer>Una web donde poner tus recetas</footer>
+		</div>
+	</header>
+	<input style="display: none;" type="checkbox" id="ckb-menu">
+	<nav id="menu">
+
+	</nav>
+
+	<form id="formRegistro" onsubmit="registrarse(this); return false;">
+		<div>
+			<label for="login">Login</label> <br>
+			<input type="text" onkeyup="comprobarLog(this)" name="login" id="login" placeholder="Login" autofocus required>(*) <br>
+			<p id="comlog"></p>
+			<label for="nombre">Nombre</label> <br>
+			<input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus required>(*) <br>
+			<label for="pwd">Contrase&ntilde;a</label> <br>
+			<input type="password" name="pwd" id="pwd"  placeholder="Contraseña" required>(*) <br>
+			<label for="pwd2">Repite la contrase&ntilde;a</label> <br>
+			<input type="password" onkeyup="comprobarPass(this)" name="pwd2" id="pwd2"  placeholder="Repite la contraseña" required>(*) <br>
+			<p id="compass"></p>
+			<label for="email">Email</label> <br>
+			<input type="email" name="email" id="email" placeholder="Email" required>(*) <br>
+			<label for="fnac">Fecha de nacimiento</label> <br>
+			<input type="date" name="fnac" id="fnac" placeholder="Fecha de nacimiento" required>(*) <br>
+			<input type="submit" value="Registrarse" id="botonRegistro">
+		</div>
+	</form>
+	<footer>
+		<p>
+			Ramon Morcillo Cascales | &copy;<time datetime="2018">Año 2018</time> |
+			<a href="acerca.html">P&aacute;gina de contacto</a> |
+			<a href="#top" style="text-decoration: none; color: black">Volver arriba</a>
+		</p>
+	</footer>
+</body>
+</html>

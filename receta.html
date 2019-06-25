@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Food - Receta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<script src="codigo.js"></script>
+</head>
+<body body onload="comprobarLogin();cargarReceta();">
+	<header id="top">
+		<img src="imgs/logo.png" alt="Food">
+		<div>
+			<h1>Food</h1>
+			<footer>Una web donde poner tus recetas</footer>
+		</div>
+	</header>
+	<input style="display: none;" type="checkbox" id="ckb-menu">
+	<nav id="menu">
+		<ul>
+			<li><label for="ckb-menu">&equiv;</label></li>
+			<li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+			<li><a href="buscar.html"><span class="icon-search"></span>Buscar</a></li>
+			<li><a href="login.html"><span class="icon-login"></span>Login</a></li>
+			<li><a href="registro.html"><span class="icon-users"></span>Registro</a></li>
+			<li><a href="logout.html"><span class="icon-logout"></span>Logout</a></li>
+			<li><a href="nueva_receta.html"><span class="icon-upload-cloud"></span>Nueva receta</a></li>
+		</ul>
+	</nav>
+
+	<article id="receta">
+	<!-- <h1 style="text-align:center">Receta 1: Macarrones con tomate</h1> -->
+		<div style="	display: flex;flex-wrap: wrap;justify-content: center;" id="fotos">
+			<!-- <figure style="width:50%">
+				<img class="noOpacity" src="imgs/macarrones.JPG" alt=""  width="90%">
+				<div style="text-align: center">
+				<h4>Pie de foto:</h4>
+				<p> veritatis earum omnis in impedit, fugit perspiciatis quae modi ullam nam natus doloremque corporis enim. Enim neq</p>
+				</div>
+			</figure> -->
+		</div>
+		<!-- <h3>Elaboracion:</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat rem qui, veritatis earum omnis in impedit, fugit perspiciatis quae modi ullam nam natus doloremque corporis enim. Enim neque magnam quas reprehenderit dignissimos voluptates labore, expedita corrupti accusamus, repellendus numquam minus fuga quod sint quam, culpa nulla dolorum? Deleniti, aliquam possimus ratione assumenda non vel numquam enim nemo natus iure velit neque culpa dicta iusto deserunt, unde voluptatum. Laudantium consectetur totam explicabo et adipisci vero corporis alias, reprehenderit dicta vitae, provident eligendi obcaecati aperiam quaerat modi hic maxime ad a aut excepturi nihil voluptatibus enim! Natus, perferendis. Distinctio voluptates ea at.</p>
+		<footer>
+			<span>Tiempo de Elaboración: 30min</span><br>
+			<span>Dificultad: Baja</span><br>
+			<span>Número de comensales: 4</span><br>
+			<a href="buscar.html">Autor: Reymon359</a> <br>
+			Fecha: <time datetime="2017-02-17">2017-02-17</time> <br>
+			<span>Votos +(1)</span> <br>
+			<span>Votos -(0)</span> <br>
+			<a href="#comentarios">Comentarios (2)</a>
+		</footer>
+		<div style="text-align: center">
+			<button>Me gusta :)</button>
+			<button>No me gusta :(</button>
+		</div> -->
+	</article>
+	<aside id="comentarios">
+		<!-- <h2 >Comentarios</h2><hr>
+		<form action="">
+			<label for="titulo_comentario">Titulo del comentario:</label><br>
+			<input type="text" maxlength="50" id="titulo_comentario" required title="escribe un titulo del comentario"><br>
+			<label for="texto_comentario"><span class="icon-doc-text-inv"></span>Texto del comentario:</label><br>
+			<textarea style="width: 80%" name="texto_comentario" id="texto_comentario" rows="6" placeholder="Escribe aquí tu comentario"></textarea> <br>
+			<input type="submit" value="Comentar">
+		</form>
+		<hr>
+		<div class="comentario">
+			<h3>Menuda pinta tienen esos macarroncios</h3>
+			<h4>Pabloski</h4>
+			<time datetime="2018-02-19T18:55">lunes, 19/02/2018, 18:55h</time>
+			<p>Pedazo macarrones Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit accusamus facilis laborum, nostrum sequi inventore, reiciendis aperiam labore perferendis officia.</p>
+		</div>
+		<hr>
+		<div class="comentario">
+			<h3>Los macarrones mas faciles que he preparado nunca</h3>
+			<h4>Ramoncho</h4>
+			<time datetime="2018-02-18T14:32">domingo, 18/02/2018, 14:32h</time>
+			<p>Son los macarrones que mas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam recusandae aliquid ducimus. ipsum dolor sit amet, consectetur adipisicing elit. Velit accusamus facilis laborum, nostrum sequi inventore, reiciendis aperiam labore perferendis officia.</p>
+		</div> -->
+
+	</aside>
+	<footer>
+		<p>
+			Ramon Morcillo Cascales | &copy;<time datetime="2018">Año 2018</time> |
+			<a href="acerca.html">P&aacute;gina de contacto</a> |
+			<a href="#top" style="text-decoration: none; color: black">Volver arriba</a>
+		</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Food - Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<script src="codigo.js">	</script>
+
+</head>
+<body body onload="comprobarLogin();">
+	<header id="top">
+		<img src="imgs/logo.png" alt="Food">
+		<div>
+			<h1>Food</h1>
+			<footer>Una web donde poner tus recetas</footer>
+		</div>
+	</header>
+	<input style="display: none;" type="checkbox" id="ckb-menu">
+	<nav id="menu">
+
+	</nav>
+	<form onsubmit="return hacerLogin(this);" action="">
+		<div>
+			<label for="usuario">Nombre de usuario o email</label> <br>
+			<input type="text" name="login" id="usuario" pattern="^[A-Za-z]\S*$"  placeholder="Usuario o correo electrónico" autofocus required>(*) <br>
+			<label for="contraseña">Contraseña</label> <br>
+			<input type="password" name="pwd" id="contraseña" pattern="^[A-Za-z]\S*$" placeholder="Introduce tu contraseña" required>(*) <br>
+			<!-- <span style="color: #7BBBF8">¿Olvidastes tu contraseña?</span> <br> -->
+			<input type="submit" value="Iniciar sesión" id="log"> <br>
+			<button type="button" > <a href="registro.html" style="text-decoration: none; color: black">Registrate</a></button>
+			<button type="button" > <a href="index.html" style="text-decoration: none; color: black">Inicio</a></button>
+
+		</div>
+
+	</form>
+
+	<footer>
+		<p>
+			Ramon Morcillo Cascales | &copy;<time datetime="2018">Año 2018</time> |
+			<a href="acerca.html">P&aacute;gina de contacto</a> |
+			<a href="#top" style="text-decoration: none; color: black">Volver arriba</a>
+		</p>
+	</footer>
+</body>
+</html>

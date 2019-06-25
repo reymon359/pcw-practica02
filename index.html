@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Food - Inicio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<script type="text/javascript" src="codigo.js"></script>
+
+	
+</head>
+<body body onload="pedirUltimasRecetasPaginadas(0,6); comprobarLogin();">
+	<header id="top">
+		<img src="imgs/logo.png" alt="Food">
+		<div>
+			<h1>Food</h1>
+			<footer>Una web donde poner tus recetas</footer>
+			<ul>
+
+			</ul>
+
+		</div>
+	</header>
+	<input style="display: none;" type="checkbox" id="ckb-menu">
+	<nav id="menu">
+
+
+	</nav>
+	<section id="busquedaRapida">
+		<div style="text-align:center;">
+			<h2>Busqueda Rápida</h2>
+			<p>Introduce el texto, o textos separados por comas que quieras buscar.</p>
+			<form id="busquedaIndex" onsubmit="fastSearch(this);return false;">
+				<label for="texto">Buscar:</label>
+				<input type="text" name="titulo" id="texto"  size="31" maxlength="255" placeholder="titulo o elaboracion de la receta" >
+				<input type="submit" value="Buscar" name="Submit" id="botonBusquedaIndex"><br>
+			</form>
+		</div>
+	</section>
+
+	<h2 style="text-align:center;">Ultimas recetas</h2>
+	<section id="recetas">
+		<!-- <article>
+			<figure>
+				<img src="imgs/macarrones.JPG" alt=""  width="100%">
+				<figcaption>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque iure velit, vel sunt porro optio mollitia pariatur nesciunt consequuntur, aliquid eum blanditiis recusandae laboriosam voluptate voluptates veniam beatae commodi, consequatur illo. Repellendus, ipsam impedit. Modi autem, voluptates dolores id repudiandae.
+				</figcaption>
+				<footer><a href="receta.html">Ver mas</a></footer>
+			</figure>
+			<a href="receta.html"><h1>Receta 1</h1></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae at, in provident reiciendis debitis neque ab quibusdam nostrum nobis rem.um, laborum eum necessitatibus assumenda. </p>
+			<footer>
+				<a href="buscar.html">Autor: Reymon359</a> <br>
+				Fecha: <time datetime="2017-02-17">2017-02-17</time> <br>
+				<span>Votos +(1)</span> <br>
+				<span>Votos -(0)</span> <br>
+				<span>Comentarios(2)</span>
+			</footer>
+		</article> -->
+	</section>
+	<!-- <ul class="pagination">
+	  <li><a href="#">«</a></li>
+	  <li><a class="active" href="#">1</a></li>
+	  <li><a href="#">2</a></li>
+	  <li><a href="#">3</a></li>
+	  <li><a href="#">4</a></li>
+	  <li><a href="#">5</a></li>
+	  <li><a href="#">6</a></li>
+	  <li><a href="#">7</a></li>
+	  <li><a href="#">»</a></li>
+	</ul> -->
+	<footer>
+		<p>
+			Ramon Morcillo Cascales | &copy;<time datetime="2018">Año 2018</time> |
+			<a href="acerca.html">P&aacute;gina de contacto</a> |
+			<a href="#top" style="text-decoration: none; color: black">Volver arriba</a>
+		</p>
+	</footer>
+</body>
+</html>
