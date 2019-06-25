@@ -1,3 +1,8 @@
+/*
+ * Practica 02 Programación del Cliente Web
+ * Author: Ramon Morcillo @reymon359
+ * Copyright (c) 2018 
+ */
 ////////////INDICE//////////////
 //~~~1.LOGIN Y LOGOUT
 //-hacerLogin
